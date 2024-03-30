@@ -5,3 +5,4 @@
 
 a = ["Joe", "Rachel", "Monica", "Phoebe", "Ross", "Chandler"]
 print(a[-6])
+
