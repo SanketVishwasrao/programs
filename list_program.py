@@ -2,13 +2,20 @@
 
 # Using enumerate() method
 
-l = [12, 21, 31, 14]
+l = [34, 5, 61, 54, 89]
 
-for index, ele in enumerate(l):
-    print(index, ele)
+for index, ele in enumerate(l, start=1):
+    print(index, "-", ele)
 
 print("---------------------------")
 
+for index, value in enumerate(l):
+    print(index, "-", value)
+
+print("----------------------------")
 
 # Without using enumerate() method
     
+l1 = [34, 5, 61, 54, 89]
+for index in range(len(l1)):
+    print(index, "-", l1[index])
