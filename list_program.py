@@ -19,3 +19,5 @@ print("----------------------------")
 l1 = [34, 5, 61, 54, 89]
 for index in range(len(l1)):
     print(index, "-", l1[index])
+
+# To check if a list is empty
