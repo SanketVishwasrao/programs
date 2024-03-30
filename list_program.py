@@ -21,4 +21,3 @@ for index in range(len(l1)):
     print(index, "-", l1[index])
 
 # To check if a list is empty
-    
