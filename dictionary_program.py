@@ -24,3 +24,10 @@ for i in friends.values():
     print(i)
 
 print("-------------------------------")
+
+
+# Program to check if a Key is Already Present in a Dictionary
+
+name = input("Enter a key here: ")
+if name in friends.keys():
+    print("Yes,", name, "is present in list")
