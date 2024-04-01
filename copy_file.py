@@ -26,14 +26,14 @@ copyfile("I:/demo.txt", "I:/file.txt")
 
 # Program to append to a file
 
-f = open("demo.txt", "a")
-f.write("\nThis is my demo file")
+# f = open("demo.txt", "a")
+# f.write("\nThis is my demo file")
 
-t = "\nHope you like it"
+# t = "\nHope you like it"
 
-for i in range(0,5):
-    f.write(t)
-f.close()
+# for i in range(0,5):
+#     f.write(t)
+# f.close()
 
 
 #  Program to Extract extension from the file name
@@ -68,3 +68,16 @@ print(os.path.splitext(file_name)[0])
 from pathlib import Path
 
 print(Path("I:/Python/oops/p2.py").stem)
+
+# Program to get line count of a file
+
+# Solution 1: Using len() function
+
+f = open('demo.txt', 'r')
+print(len(f.readlines()))
+f.close()
+
+# Solution 2: Using list comprehension
+
+lines = sum(1 for i in open('demo.txt'))
+print(lines)
