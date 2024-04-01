@@ -102,3 +102,18 @@ s = "Hello everyone\n"\
 "hope you all will like it"
 
 print(s)
+
+print("--------------------------------")
+
+# Program to trim whitespace from a string
+
+# Solution 1: Using strip() function
+s3 = " I  love Python "
+print(s3)
+print(s3.strip())
+
+# Solution 2: Using Regular Expressions(RegEx)
+import re
+s4 = " I love Python  "
+x = re.sub(r'^\s+|\s+$','',s4)
+print(x)
