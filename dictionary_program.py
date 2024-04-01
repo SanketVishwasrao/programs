@@ -52,3 +52,53 @@ print(pop_item)
 print(marks)
 
 print("-------------------------------")
+
+
+#  Program to convert two lists into a dictionary
+
+# Solution 1: Using zip() and Dictionary methods 
+
+# name = ["John", "Peter", "Lisa", "David"]
+# stud_marks = [98, 78, 88, 72]
+
+# dictionary = zip(name, stud_marks)
+# print(dict(dictionary))
+
+# print("-------------------------------")
+
+# Solution 2: Using zip() and List Comprehension
+
+name = ["John", "Peter", "Lisa", "David"]
+stud_marks = [98, 78, 88, 72]
+
+dictionary = {key:value for key, value in zip(name, stud_marks)}
+print(dictionary)
+
+print("-------------------------------")
+
+# Program to differentiate between type() and isinstance()
+
+l = [2, 3, 4, 5, 6, 7]
+print(type(l) == list)
+print(isinstance(l, list))
+
+print("-------------------------------")
+
+class SmartPhone:
+    def name(self):
+        pass
+
+class Nokia(SmartPhone):
+    def phone_name(self):
+        pass
+
+obj_smt = SmartPhone()
+obj_Nk = Nokia()
+
+print(type(obj_Nk) == SmartPhone)
+print(type(obj_smt) == SmartPhone)
+print()
+print(isinstance(obj_smt, SmartPhone))
+print(isinstance(obj_Nk, SmartPhone))
+
+print("-------------------------------")

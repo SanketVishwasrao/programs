@@ -34,3 +34,37 @@ t = "\nHope you like it"
 for i in range(0,5):
     f.write(t)
 f.close()
+
+
+#  Program to Extract extension from the file name
+
+# Solution 1: Using os module
+
+# import os
+
+# file_extension = os.path.splitext("I:/Python/oops/p2.py")
+# print(file_extension)
+# print(file_extension[1])
+
+# Solution 2: Using pathlib module
+
+# from pathlib import Path
+
+# print(Path("I:/Python/oops/p2.py").suffix)  # It gives extension of file
+# print(Path("I:/Python/oops/p2.py").stem)  # It gives file name
+
+
+# Get the file name from the file path
+
+# Solution 1: Using os module
+
+import os
+
+file_name = os.path.basename("I:/Python/oops/p2.py")
+print(os.path.splitext(file_name)[0])
+
+# Solution 2: Using Path module
+
+from pathlib import Path
+
+print(Path("I:/Python/oops/p2.py").stem)
