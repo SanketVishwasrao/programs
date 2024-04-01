@@ -31,3 +31,24 @@ print("-------------------------------")
 name = input("Enter a key here: ")
 if name in friends.keys():
     print("Yes,", name, "is present in list")
+
+print("-------------------------------")
+
+# Program to Delete an element from a dictionary
+    
+# Solution 1: Using del statement
+    
+# marks = {"John": 89, "Lisa": 96, "David": 65, "Peter": 88}
+# print(marks)    
+
+# del marks["Peter"]
+# print(marks)
+
+#  Solution 2: Using pop() function
+
+marks = {"John": 89, "Lisa": 96, "David": 65, "Peter": 88}
+pop_item = marks.pop("John")
+print(pop_item)
+print(marks)
+
+print("-------------------------------")

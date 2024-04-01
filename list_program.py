@@ -70,3 +70,29 @@ print("-----------------------------")
 
 l1.extend(l2)
 print(l1)
+
+# Program to Get the last element of the list
+
+l5 = ["Ironman", "Thor", "Hulk", "Vision"]
+print(l5[-1])
+print(l5[len(l5) - 1])
+
+
+# Program to randomly select an element from the list
+
+num = input("Enter something here: ")
+def float_check(num):
+    try:
+        float(num)
+        return True
+    except:
+        return False
+    
+print(float_check(num))
+
+
+# Program to count the occurrence of an item in a list
+
+numbers = [10, 20, 50, 40, 10, 30, 10, 20, 40, 70]
+count_occurence = numbers.count(18)
+print(count_occurence)
