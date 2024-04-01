@@ -82,3 +82,23 @@ print(random_value)
 
 # Program to Create a Long multiline string
 
+# Solution 1: Using triple quotations
+
+print('''Hello everyone 
+this is my demo file
+hope you all will like it''')
+
+print("--------------------------------")
+
+# Solution 2: Using \n
+
+print("Hello everyone\nthis is my demo file\nhope you all will like it")
+print("--------------------------------")
+
+# Solution 3: Using \
+
+s = "Hello everyone\n"\
+"this is my demo file\n"\
+"hope you all will like it"
+
+print(s)
