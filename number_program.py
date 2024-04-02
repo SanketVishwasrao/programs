@@ -80,3 +80,159 @@
 num = int(input("Enter the number: ")) # 248
 
 print("The number of digits present in a number:", len(str(num)))
+
+
+print("---------------------------------------------")
+# Program to add two numbers
+
+# num1 = int(input("Enter first number: "))
+# num2 = int(input("Enter second number: "))
+
+# print("The sum of given two numbers is", num1 + num2)
+
+
+# Program to find the square root
+
+# Solution 1: Using Exponentiation
+
+# num1 = int(input("Enter a number: "))
+# num2 = 0.5
+
+# print("The square root of the given number is", num1**num2)
+
+# Solution 2: Using Math module
+
+# import math
+
+# num1 = int(input("Enter the number: "))
+# print("The square root of given number is",math.sqrt(num1))
+
+
+# Program to calculate the Area of a triangle
+
+# base = float(input("Enter the base: "))
+# height = float(input("Enter the height: "))
+
+# area = (0.5) * base * height
+# print("The area of triangle is", area)
+
+
+# Program to solve quadratic equation
+
+# Quadratic Equation :: ax**2 + b*x + c
+# a, b, c are real numbers
+# a != 0
+
+# import cmath
+
+# a = int(input("Enter number (a != 0): "))
+# b = int(input("Enter number: "))
+# c = int(input("Enter number: "))
+
+# # formula for discriminant
+
+# d = (b ** 2) - (4 * a * c)
+
+# root1 = (-b - cmath.sqrt(d)) / (2*a)
+# root2 = (-b + cmath.sqrt(d)) / (2*a)
+
+# print("The roots are", root1, "and", root2)
+
+
+# Program to swap two variables
+
+# Solution 1: Using third variable
+
+# x = int(input("Enter first number: "))  # 12
+# y = int(input("Enter second variable: ")) # 13
+
+# print("Before swapping two variables:")
+# print("first number:",x)
+# print("second number:",y)
+# print()
+
+# temp = x  # 12
+# x = y     # 13
+# y = temp  # 12
+
+# print("After swapping two variables:")
+# print("first number:",x)
+# print("second number:",y)
+
+# Solution 2: Without using third variable 
+
+# x = int(input("Enter first number: "))
+# y = int(input("Enter second number: "))
+
+# print("Before swapping two variables:")
+# print("first number:",x)
+# print("second number:",y)
+# print()
+
+# x, y = y, x
+
+# print("After swapping two variables:")
+# print("first number:",x)
+# print("second number:",y)
+
+
+# Program to generate a random number
+
+# import random 
+
+# x = random.randint(0, 10)
+# print(x)
+
+
+# Program to convert kilometers to miles
+
+# 1 kilometre = 0.621371 mile
+
+# km = float(input("Enter your value in kms: "))
+# miles = (0.621371) * km
+# print(km, "kms will be", miles, "miles")
+
+
+# Program to convert Celsius to Fahrenheit
+
+# 0 degree celsius = 32 Fahrenheit
+
+# (celsius * (9/5)) + 32 = Fahrenheit
+
+# celsius = int(input("Enter temperature in celsius: "))
+# fahrenheit = (celsius * (9/5)) + 32
+
+# print("Fahrenheit temperature:", fahrenheit, "fahrenheit")
+
+
+# Program to check if a number is Positive, Negative or zero
+
+# num1 = int(input("Enter the number: "))
+
+# if num1 > 0:
+#     print(num1,"is positive number")
+# elif num1 == 0:
+#     print("It is zero")
+# else:
+#     print(num1,"is negative number")
+
+
+# Program to check if a number is Odd or Even
+
+# num1 = int(input("Enter the number: "))
+# if num1 % 2 == 0:
+#     print(num1, "is even")
+# else:
+#     print(num1, "is odd")
+
+
+# Program to check leap year
+
+# year = int(input("Enter the year: "))
+# if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+#     print(year, "is a leap year")
+# else:
+#     print(year, "is not a leap year")
+
+
+# Program to find the largest among three numbers
