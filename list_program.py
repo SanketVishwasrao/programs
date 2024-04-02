@@ -96,3 +96,14 @@ print(float_check(num))
 numbers = [10, 20, 50, 40, 10, 30, 10, 20, 40, 70]
 count_occurence = numbers.count(18)
 print(count_occurence)
+
+
+# Program to iterate through two lists in parallel
+
+l1 = ["Rachel", "Monica", "Phoebe"]
+l2 = ["Ross", "Chandler", "Joe"]
+
+# print(tuple(zip(l1, l2)))
+
+for x,y in zip(l1, l2):
+    print(x, y)

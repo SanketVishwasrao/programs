@@ -56,7 +56,7 @@ print("-------------------------------")
 
 #  Program to convert two lists into a dictionary
 
-# Solution 1: Using zip() and Dictionary methods 
+# Solution 1: Using zip() and Dictionary methods  => zip is used in tuple
 
 # name = ["John", "Peter", "Lisa", "David"]
 # stud_marks = [98, 78, 88, 72]

@@ -81,3 +81,68 @@ f.close()
 
 lines = sum(1 for i in open('demo.txt'))
 print(lines)
+
+
+# Program to find all file with .txt extension present inside a directory
+
+# Solution 1: Using glob module and os module => it gives the efficient output
+
+# import glob, os
+
+# os.chdir("I:/Python/programs")
+
+# for files in glob.glob("*.txt"):
+#     print(files)
+
+# Solution 2: Using os module
+    
+# import os
+
+# for files in os.listdir("I:/Python/programs"):
+#     if files.endswith(".txt"):
+#         print(files)
+
+# Solution 3: Using os.walk()
+        
+# import os
+
+# for root, directory, files in os.walk("I:/Python/programs"):
+#     for file in files:
+#         if file.endswith(".txt"):
+#             print(file) 
+
+
+
+# Program to get the full path of the current working directory
+            
+# Solution 1: Using os module
+            
+# import os
+
+# print(os.path.abspath(os.getcwd()))
+
+# print(os.path.dirname(os.path.abspath("I:/Python/programs/copy_file.py")))
+
+# Solution 2: Using pathlib module
+
+# import pathlib 
+
+# print(pathlib.Path().absolute())
+# print(pathlib.Path("I:/Python/programs/copy_file.py").parent.absolute())
+
+
+# Program to check file size
+
+# Solution 1: Using os module
+
+# import os
+
+# file_size = os.stat("I:/Python/programs/copy_file.py")
+# print(file_size.st_size)
+
+# Solution 2: Using pathlib module
+
+# from pathlib import Path
+
+# file_size = Path("I:/Python/programs/copy_file.py")
+# print(file_size.stat().st_size)
