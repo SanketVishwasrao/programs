@@ -117,3 +117,8 @@ import re
 s4 = " I love Python  "
 x = re.sub(r'^\s+|\s+$','',s4)
 print(x)
+
+# ^ => circumflex -> starting
+# \s => whitespace
+# \s+ => multiple times whitespace
+# \s+$ => multiple times whitespace at the end
