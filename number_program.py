@@ -60,3 +60,23 @@
 # exponent = int(input("Enter exponent number: "))
 
 # print(base**exponent)
+
+
+# Program to count the number of digits present in a number
+
+# Solution 1: Using while() loop
+
+# num = int(input("Enter the number: ")) # 248
+# digits_count = 0
+
+# while num != 0:  # 248, 24, 2, 0
+#     num = num // 10  # 24, 2, 0
+#     digits_count += 1  # 1, 2, 3
+
+# print("The number of digits present in a number:", digits_count)
+
+# Solution 2: Using len() function
+
+num = int(input("Enter the number: ")) # 248
+
+print("The number of digits present in a number:", len(str(num)))
