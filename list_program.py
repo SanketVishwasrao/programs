@@ -107,3 +107,16 @@ l2 = ["Ross", "Chandler", "Joe"]
 
 for x,y in zip(l1, l2):
     print(x, y)
+
+
+# Program to remove duplicate element from a list
+    
+# l3 = [12, 4, 5, 6, 6, 12, 7, 9, 12]
+
+# print(list(set(l3)))
+    
+# l3 = [12, 4, 5, 6, 6, 12, 7, 9, 12]
+# x = [3, 6, 9, 4, 3, 6]
+
+# print(list(set(l3) ^ set(x)))
+    

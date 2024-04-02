@@ -122,3 +122,74 @@ print(x)
 # \s => whitespace
 # \s+ => multiple times whitespace
 # \s+$ => multiple times whitespace at the end
+
+
+# Program to check if Two strings are Anagram
+
+# anagram => if two strings having equal length and after sorting two strings, then it matches the 
+#            values, then these two strings are Anagram
+
+
+# print("-----------------------------------------")
+# print("Program to check Anagram")
+# str1 = input("Enter first string: ").lower()
+# str2 = input("Enter second string: ").lower()
+
+# if len(str1) == len(str2):
+#     s1_sorted = sorted(str1)
+#     s2_sorted = sorted(str2)
+
+#     if s1_sorted == s2_sorted:
+#         print("The String is an Anagram")
+#     else:
+#         print("The String is not an Anagram")
+
+# else:
+#     print("The String is not an Anagram")
+
+
+# Program to capitalize the first character of a string
+
+# Solution 1: Using .upper() and slicing concepts
+
+# print("------------------------------------------------------")
+# a = input("Enter the string: ")
+
+# temp_str = a[:1].upper() + a[1:].lower()
+# print("Capitalize the first character of a string:", temp_str)
+
+# Solution 2: Using .capitalize() method
+
+# print("------------------------------------------------------")
+
+# a = input("Enter the string: ")
+# print("Capitalize the first character of a string:", a.capitalize())
+
+
+# Program to count the number of occurrence of a character in string
+
+# Solution 1: Using for() loop
+
+# print("-----------------------------------------")
+# str3 = "Wscubetech"
+# char = "e"
+# count = 0
+
+# for c in str3:
+#     if c == char:
+#         count += 1
+
+# print(char,"present in",str3,"is", count,"times")
+
+# Solution 2: Using count function
+
+# print("-----------------------------------------")
+
+# str4 = "wscubetech"
+# char1 = "m"
+# print(char1, "present in", str4, "is", str4.count(char1), "times")
+
+
+# Program to convert Bytes to a String
+    
+print(b'Welcome to Python \xF0\x9F\x98\x83'.decode('utf-8'))
