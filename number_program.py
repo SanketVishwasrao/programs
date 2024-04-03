@@ -287,3 +287,89 @@ print("---------------------------------------------")
 
 
 #  Program to find the factorial of a number
+
+# Solution 1: Using for loop
+
+# num1 = int(input("Enter a number: "))
+# fact = 1
+
+# if num1 == 0:
+#     print("Factorial of", num1, "is 1")
+# elif num1 > 1:
+#     for i in range(1, num1 + 1):
+#         fact *= i
+# else:
+#     print("Factorial of negative doesn't exist")
+
+# print("Factorial of", num1, "is", fact)
+
+# Solution 2: Using recursion
+
+# def factorial(num):
+#     if num == 0:
+#         return 1
+#     else:
+#         return num * factorial(num - 1)
+    
+# num1 = int(input("Enter a number: "))
+# print("The factorial of", num1, "is", factorial(num1))
+
+
+# Program to display the multiplicatio table
+
+# Solution 1: Using for loop
+
+# num1 = int(input("Enter the number: "))
+# print("The multiplication table of", num1, "is:")
+
+# for i in range(1, 11):
+#     print(num1, "*", i, "=", (num1*i))
+
+# Solution 2: Using while loop
+
+# num1 = int(input("Enter the number: "))
+# print("The multiplication table of", num1, "is:")
+# i = 1
+
+# while i < 11:
+#     print(num1, "*", i, "=", (num1 * i))
+#     i += 1
+
+
+# Program to print the Fibonacci sequence
+
+# a = 0
+# b = 1
+
+# terms = int(input("Enter the number of terms: "))
+
+# print(a, b, end=" ")
+
+# for i in range(terms-2):
+#     c = a + b
+#     print(c, end=" ")
+#     a = b
+#     b = c
+
+
+# Program to check Armstrong Number
+
+num1 = int(input("Enter the number: "))  # 153
+temp = num1  # 153
+sum = 0
+digits_count = 0
+lst = []
+
+while temp != 0:  # 153, 15, 1
+    a = temp % 10      # 3, 5, 1
+    lst.append(a)      # [3, 5, 1]
+    temp = temp // 10  # 15, 1, 0
+    digits_count += 1  # 1, 2, 3
+
+for i in range(len(lst)):
+    sum  = sum + lst[i]**digits_count # 27, 152, 153
+
+if sum == num1:
+    print(num1, "is an armstrong number")
+else:
+    print(num1, "is not an armstrong number")
