@@ -236,3 +236,53 @@ print("---------------------------------------------")
 
 
 # Program to find the largest among three numbers
+
+# num1 = int(input("Enter the value of num1: "))
+# num2 = int(input("Enter the value of num2: "))
+# num3 = int(input("Enter the value of num3: "))
+
+# if num1 > num2 and num1 > num3:
+#     print(num1, "is the largest among three numbers")
+# elif num2 > num1 and num2 > num3:
+#     print(num2, "is the largest among three numbers")
+# else:
+#     print(num3, "is the largest among three numbers")
+
+
+# Program to check prime number
+
+# num1 = int(input("Enter the number: "))
+
+# if num1 == 1:
+#     print(num1, "is not a prime number")
+# elif num1 > 1:
+#     for i in range(2, num1//2 + 1):
+#         if num1 % i == 0:
+#             print(num1, "is not a prime number")
+#             break
+#     else:
+#         print(num1, "is a prime number")
+
+
+# Program to print all the prime numbers in an interval
+
+# lower_interval = int(input("Enter lower range: "))  # 5
+# upper_interval = int(input("Enter upper range: "))  # 15
+# lst = []
+
+# # Ans ====>  5, 7, 11, 13
+
+# if lower_interval < upper_interval:
+#     for i in range(lower_interval, upper_interval + 1):
+#         for j in range(2, i // 2 + 1):
+#             if i % j == 0:
+#                 break
+#         else:
+#             lst.append(i)
+# else:
+#     print("Please enter lower range value is less than upper range value")
+
+# if len(lst) > 0:
+#     print(lst)
+
+
