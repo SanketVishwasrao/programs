@@ -354,22 +354,22 @@ print("---------------------------------------------")
 
 # Program to check Armstrong Number
 
-num1 = int(input("Enter the number: "))  # 153
-temp = num1  # 153
-sum = 0
-digits_count = 0
-lst = []
+# num1 = int(input("Enter the number: "))  # 153
+# temp = num1  # 153
+# sum = 0
+# digits_count = 0
+# lst = []
 
-while temp != 0:  # 153, 15, 1
-    a = temp % 10      # 3, 5, 1
-    lst.append(a)      # [3, 5, 1]
-    temp = temp // 10  # 15, 1, 0
-    digits_count += 1  # 1, 2, 3
+# while temp != 0:  # 153, 15, 1
+#     a = temp % 10      # 3, 5, 1
+#     lst.append(a)      # [3, 5, 1]
+#     temp = temp // 10  # 15, 1, 0
+#     digits_count += 1  # 1, 2, 3
 
-for i in range(len(lst)):
-    sum  = sum + lst[i]**digits_count # 27, 152, 153
+# for i in range(len(lst)):
+#     sum  = sum + lst[i]**digits_count # 27, 152, 153
 
-if sum == num1:
-    print(num1, "is an armstrong number")
-else:
-    print(num1, "is not an armstrong number")
+# if sum == num1:
+#     print(num1, "is an armstrong number")
+# else:
+#     print(num1, "is not an armstrong number")
