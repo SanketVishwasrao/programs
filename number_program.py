@@ -373,3 +373,219 @@ print("---------------------------------------------")
 #     print(num1, "is an armstrong number")
 # else:
 #     print(num1, "is not an armstrong number")
+
+
+# Program to find the Armstrong number in an interval
+
+# lower_limit = int(input("Enter lower limit: "))
+# upper_limit = int(input("Enter upper limit: "))
+# armstrong_number_lst = []
+
+# for num1 in range(lower_limit, upper_limit + 1):
+#     sum = 0
+#     temp = num1
+#     digits_count = len(str(num1))
+
+#     while temp != 0:
+#         a = temp % 10
+#         sum = sum + a ** digits_count
+#         temp = temp // 10
+
+#     if sum == num1:
+#         armstrong_number_lst.append(num1)
+
+# print("Armstrong numbers in range of", lower_limit, "and", upper_limit, 
+#     "is", armstrong_number_lst)
+
+
+# Program to find the sum of natural numbers
+
+# num1 = int(input("Enter a number: "))
+# sum = 0
+
+# if num1 < 0:
+#     print("Please enter positive number")
+# else:
+#     while num1 != 0:
+#         sum += num1
+#         num1 -= 1
+
+# print("Sum of natural number is", sum)
+
+
+
+# Program to find numbers divisible by another number
+
+# Solution 1: Using for() loop
+
+# print("The numbers divisible by 13 are: ")
+# for i in range(1, 100):
+#     if i % 13 == 0:
+#         print(i, end=" ")
+
+# Solution 2: Using lambda function and filter function
+
+# print("The numbers divisible by 13 are:", end=" ")
+# l = [39, 48, 26, 98, 33, 67, 87]
+
+# result = list(filter(lambda x: x % 13 == 0, l))
+
+# print(result)
+
+
+# Program to convert Decimal to Binary, Octal and Hexadecimal
+
+# decimal = int(input("Enter number here: "))
+# print("The conversion of decimal number", decimal, "is: ")
+
+# print(bin(decimal), "in binary")        # prefix of binary => 0b
+# print(oct(decimal), "in octal")         # prefix of octal => 0o
+# print(hex(decimal), "in hexadecimal")   # prefix of hexadecimal => 0x
+
+
+# Program to find ASCII value of character
+
+# Use of ord() function
+
+# char = '%'
+# print("The ASCII value of", char, "is", ord(char)) 
+
+
+# Program to find HCF or GCD
+
+# def calcHCF(x, y):
+#     hcf = 1
+#     if x > y:
+#         smaller = y
+#     else:
+#         smaller = x
+
+#     for i in range(1, smaller+1):
+#         if x % i == 0 and y % i == 0:
+#             hcf = i
+#     return hcf
+
+# num1 = int(input("Enter first number: "))
+# num2 = int(input("Enter second number: "))
+# result = calcHCF(num1, num2)
+# print("The HCF of", num1, "and", num2, "is", result)
+
+
+# Program to find the factors of a number
+
+# num1 = int(input("Enter a number: "))
+# print("The factors of", num1, "are:", end=" ")
+# for i in range(1, num1+1):
+#     if num1 % i == 0:
+#         print(i, end=" ")
+
+
+# Program to make a simple calculator
+
+# print("~~~~Mini Calculator~~~~")
+
+# num1 = float(input("Enter number 1: "))
+# num2 = float(input("Enter number 2: "))
+# result = 0
+
+# print("Press 1 for addition \nPress 2 for subtraction \nPress 3 for multiplication \nPress 4 for division")
+
+# choice = int(input("Enter the choice from 1-4: "))
+
+# if choice == 1:
+#     result = num1 + num2
+# elif choice == 2:
+#     result = num1 - num2
+# elif choice == 3:
+#     result = num1 * num2
+# elif choice == 4:
+#     result = num1 / num2
+# else:
+#     print("Invalid choice")
+
+# print("Result is", result)
+
+
+# Program to shuffle deck of cards
+
+# import random, itertools
+
+# deck = list(itertools.product(range(1, 14), ['Spade', 'Club', 'Hearts', 'Diamond']))
+
+# random.shuffle(deck)
+# print(deck)
+
+# for i in range(5):
+#     print(deck[i][0], "of", deck[i][1])
+
+
+# Program to display Calendar
+
+# import calendar
+
+# year = int(input("Enter the year: "))
+# month = int(input("Enter the month: "))
+
+# calen = calendar.month(year, month)
+# print(calen)
+
+
+# Program to display Fibonacci sequence using recursion
+
+# def fibo(n):
+#     if n <= 1:
+#         return n
+#     else:
+#         return fibo(n - 1) + fibo(n - 2)
+
+# n = int(input("Enter the number of terms: ")) # 5
+# if n <= 1: 
+#     print("Enter the positive number")
+# else:
+#     print("Fibonacci sequence:")
+#     for i in range(n):
+#         print(fibo(i))
+
+
+# Program to find sum of natural numbers using recursion
+
+# def sum_of_natural_nos(n):
+#     if n <= 1:
+#         return n
+#     else:
+#         return n + sum_of_natural_nos(n - 1)
+
+# n = int(input("Enter the no of terms: "))
+# if n <= 0:
+#     print("Enter positive numbers")
+# else:
+#     print("Sum of first", n,"natural numbers is", sum_of_natural_nos(n))
+
+
+# Program to find factorial of number using recursion
+
+# def fact(n):
+#     if n == 1:
+#         return 1
+#     else:
+#         return n * fact(n - 1)
+    
+# n = int(input("Enter the number to find out factorial: "))
+
+# if n == 0:
+#     print("Factorial of", n, "is", 1)
+# elif n < 0:
+#     print("Factorial of negative number doesn't exist")
+# else:
+#     result = fact(n)
+#     print("Factorial of", n, "is", result)
+
+
+# Program to convert Decimal to Binary using Recursion
+
+# def ConvertBinary(n):
+#     if n > 1:
+#         ConvertBinary(n // 2)
+#     print(n % 2, end="")
+
+# ConvertBinary(14)
